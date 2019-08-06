@@ -8,7 +8,7 @@ resource "aws_route53_health_check" "default" {
   request_interval  = "${var.time_request}"
   
   tags = {
-    name = "route53healthcheck/${var.hostname}"
+    url = "${var.hostname}"
   }
 
 }
