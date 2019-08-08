@@ -38,6 +38,9 @@ variable "slack_endpoint" {
 variable "aws_sns_topic_arn"{
   default = ""
 }     
+variable "protocol"{
+  default = "HTTP"
+}     
 
 variable "threshold" {
   default = 1
