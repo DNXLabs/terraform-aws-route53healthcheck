@@ -15,19 +15,10 @@ variable "healthcheck_path" {
   default = "/"
 }
 
-variable "sns-subscribe-list" {
-  default = ""
-  description = "email to send notifications"
-}
-
-variable "slack_endpoint" {
-  default = ""
-  description = "endpoint to Slack notifications chanel"
-}
-
 variable "aws_sns_topic_arn"{
   default = ""
-}     
+}
+
 variable "protocol"{
   default = "HTTP"
 }     
