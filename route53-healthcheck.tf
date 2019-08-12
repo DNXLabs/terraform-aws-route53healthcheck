@@ -4,12 +4,12 @@ resource "aws_route53_health_check" "default" {
   port                            = "${var.port}"
   type                            = "${var.protocol}"
   resource_path                   = "${var.healthcheck_path}"
-  failure_threshold               = "2"
+  failure_threshold               = "${var.failure_threshold}"
   request_interval                = "${var.time_request}"
   #insufficient_data_health_status = "Healthy"
   
   tags = {
-    url = "${var.hostname}"
+    Name = "${var.name}"
   }
 
 }

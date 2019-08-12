@@ -2,7 +2,7 @@
 
 AWS Route53 healthcheck Application Module
 
-This module is designed to be used with `DNXLabs/terraform-aws-monitoring`.
+Requires region us-east-1
 
 ## Inputs
 

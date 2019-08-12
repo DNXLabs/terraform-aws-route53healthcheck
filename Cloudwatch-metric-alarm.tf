@@ -1,7 +1,4 @@
-resource "aws_cloudwatch_metric_alarm" "health_check" {
-   
-    provider = "aws.us-east-1"
-  
+resource "aws_cloudwatch_metric_alarm" "health_check" {  
   alarm_name          = "route53-healthcheck/${var.name}"
   metric_name         = "HealthCheckStatus"
   comparison_operator = "LessThanThreshold"

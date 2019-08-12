@@ -1,13 +1,3 @@
-# == REQUIRED VARS
-
-variable "aws_account_id" {
-  description = "AWS Account where will be created new resources"
-}
-
-variable "aws_role" {
-  description = "Name of role to get access"
-}
-
 variable "name" {
   description = "Name of app service needs to be checked"
 }
@@ -52,4 +42,8 @@ variable "period" {
 
 variable "time_request" {  
   default = 30
+}
+
+variable "failure_threshold" {
+  default = 2
 }
