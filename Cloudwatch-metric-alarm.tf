@@ -17,6 +17,6 @@ resource "aws_cloudwatch_metric_alarm" "health_check" {
   alarm_actions             = [var.aws_sns_topic_arn]
   insufficient_data_actions = [var.aws_sns_topic_arn]
 
-  treat_missing_data        = "breaching"
-  depends_on                = ["aws_route53_health_check.default"]
+  treat_missing_data = "breaching"
+  depends_on         = ["aws_route53_health_check.default"]
 }

@@ -15,11 +15,11 @@ variable "healthcheck_path" {
   default = "/"
 }
 
-variable "aws_sns_topic_arn"{
+variable "aws_sns_topic_arn" {
   default = ""
 }
 
-variable "protocol"{
+variable "protocol" {
   default = "HTTP"
 }
 
