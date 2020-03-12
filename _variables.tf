@@ -21,7 +21,7 @@ variable "aws_sns_topic_arn"{
 
 variable "protocol"{
   default = "HTTP"
-}     
+}
 
 variable "threshold" {
   default = 1
@@ -31,7 +31,7 @@ variable "period" {
   default = 60
 }
 
-variable "time_request" {  
+variable "time_request" {
   default = 30
 }
 
