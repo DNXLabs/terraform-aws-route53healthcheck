@@ -8,7 +8,7 @@ This module requires:
 The module creates:
 * Cloudwatch metric alarms - This metric monitors whether the service custumer is down or not
 
-In addition you have the option :
+In addition you have the option to :
  - Create or not a Simple Notification Service topic (SNS)
  
 
