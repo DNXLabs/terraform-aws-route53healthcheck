@@ -1,23 +1,15 @@
 # terraform-aws-route53healthcheck
-Terraform-aws-route53healthcheck is a Custom module to configure health check and related AWS CloudWatch metric alarms.
 
-This module requires:
- - Terraform Version >=0.12.20
- - Region us-east-1
+[![Lint Status](https://github.com/DNXLabs/terraform-aws-route53healthcheck/workflows/Lint/badge.svg)](https://github.com/DNXLabs/terraform-aws-route53healthcheck/actions)
+[![LICENSE](https://img.shields.io/github/license/DNXLabs/terraform-aws-route53healthcheck)](https://github.com/DNXLabs/terraform-aws-route53healthcheck/blob/master/LICENSE)
+
+This terraform module is a Custom module to configure health check and related AWS CloudWatch metric alarms.
 
 The module creates:
  - Cloudwatch metric alarms - This metric monitors whether the service custumer is down or not
 
 In addition you have the option to :
  - Create or not a Simple Notification Service topic (SNS)
- 
-
-More Information: https://dnxlabs.slab.com/public/tmgdfkno
-
-
-[![Lint Status](https://github.com/DNXLabs/terraform-aws-route53healthcheck/workflows/Lint/badge.svg)](https://github.com/DNXLabs/terraform-aws-route53healthcheck/actions)
-[![LICENSE](https://img.shields.io/github/license/DNXLabs/terraform-aws-route53healthcheck)](https://github.com/DNXLabs/terraform-aws-route53healthcheck/blob/master/LICENSE)
-
 
 <!--- BEGIN_TF_DOCS --->
 
