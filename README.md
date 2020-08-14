@@ -3,9 +3,15 @@
 [![Lint Status](https://github.com/DNXLabs/terraform-aws-route53healthcheck/workflows/Lint/badge.svg)](https://github.com/DNXLabs/terraform-aws-route53healthcheck/actions)
 [![LICENSE](https://img.shields.io/github/license/DNXLabs/terraform-aws-route53healthcheck)](https://github.com/DNXLabs/terraform-aws-route53healthcheck/blob/master/LICENSE)
 
-AWS Route53 healthcheck Application Module
+This is a module to configure health check and related AWS CloudWatch metric alarms.
 
-Requires region us-east-1
+The following resources will be created:
+
+ - Cloudwatch metric alarms - This metric monitors whether the service custumer is down or not
+
+In addition you have the option to:
+
+ - Create or not a Simple Notification Service topic (SNS)
 
 <!--- BEGIN_TF_DOCS --->
 
