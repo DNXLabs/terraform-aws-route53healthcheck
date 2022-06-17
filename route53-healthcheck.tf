@@ -1,5 +1,5 @@
 resource "aws_route53_health_check" "default" {
-  reference_name    = var.name
+  # reference_name    = var.name
   fqdn              = var.hostname
   port              = var.port
   type              = var.protocol
@@ -9,6 +9,6 @@ resource "aws_route53_health_check" "default" {
   #insufficient_data_health_status = "Healthy"
 
   tags = {
-    Name = var.name
+    Name = var.hostname
   }
 }

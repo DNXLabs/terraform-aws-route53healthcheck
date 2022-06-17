@@ -1,6 +1,6 @@
-variable "name" {
-  description = "Name of app service needs to be checked"
-}
+# variable "name" {
+#   description = "Name of app service needs to be checked"
+# }
 
 variable "port" {
   default     = "80"
@@ -24,17 +24,28 @@ variable "protocol" {
 }
 
 variable "threshold" {
-  default = 1
+  default = 2
 }
 
 variable "period" {
   default = 60
 }
 
-variable "time_request" {
+variable "request_interval" {
   default = 30
 }
 
 variable "failure_threshold" {
-  default = 2
+  default = 3
+}
+
+variable "measure_latency" {
+  type        = bool
+  default     = false
+  description = "Latency between health checkers in multiple AWS regions and your endpoint and to display CloudWatch latency graphs in the Route 53 console"
+}
+
+variable "cloudwatch_alarms_enabled" {
+  type        = bool
+  default     = false
 }

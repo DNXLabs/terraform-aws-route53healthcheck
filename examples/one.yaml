@@ -1,0 +1,21 @@
+workspaces:
+  prod-ap-southeast-2:
+    route53_health_check:
+      health_check_enable: true
+      endpoints:
+        - hostname: www.example.com
+          port: 8443
+          protocol: HTTPS
+          healthcheck_path: /healthcheck
+          measure_latency: true
+        - hostname: www.myportal.com
+          port: 443
+          protocol: HTTPS 
+          healthcheck_path: 
+          measure_latency: true
+    
+    aws_cloudwatch_metric_alarm: []
+      # cloudwatch_alarms_enabled: true
+      # - alarm_name: 
+      #   period:
+      #   aws_sns_topic_arn: 
