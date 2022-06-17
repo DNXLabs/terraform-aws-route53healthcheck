@@ -46,6 +46,6 @@ variable "measure_latency" {
 }
 
 variable "cloudwatch_alarms_enabled" {
-  type        = bool
-  default     = false
+  type    = bool
+  default = false
 }

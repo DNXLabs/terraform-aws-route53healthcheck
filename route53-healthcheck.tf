@@ -5,7 +5,8 @@ resource "aws_route53_health_check" "default" {
   type              = var.protocol
   resource_path     = var.healthcheck_path
   failure_threshold = var.failure_threshold
-  request_interval  = var.time_request
+  request_interval  = var.request_interval
+  measure_latency   = var.measure_latency
   #insufficient_data_health_status = "Healthy"
 
   tags = {
