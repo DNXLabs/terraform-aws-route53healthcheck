@@ -1,5 +1,6 @@
 resource "aws_cloudwatch_metric_alarm" "health_check" {
-  alarm_name          = "route53-healthcheck/${var.name}"
+  count               = try(var.cloudwatch_alarms_enabled, false) ? 1 : 0
+  alarm_name          = "route53-healthcheck/${var.hostname}"
   metric_name         = "HealthCheckStatus"
   comparison_operator = "LessThanThreshold"
   evaluation_periods  = "2"

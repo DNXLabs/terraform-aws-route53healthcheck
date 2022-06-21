@@ -32,15 +32,16 @@ In addition you have the option to:
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | aws\_sns\_topic\_arn | n/a | `string` | `""` | no |
-| failure\_threshold | n/a | `number` | `2` | no |
+| cloudwatch\_alarms\_enabled | n/a | `bool` | `false` | no |
+| failure\_threshold | n/a | `number` | `3` | no |
 | healthcheck\_path | n/a | `string` | `"/"` | no |
 | hostname | app Hostname to check | `any` | n/a | yes |
-| name | Name of app service needs to be checked | `any` | n/a | yes |
+| measure\_latency | Latency between health checkers in multiple AWS regions and your endpoint and to display CloudWatch latency graphs in the Route 53 console | `bool` | `false` | no |
 | period | n/a | `number` | `60` | no |
 | port | Port for target check | `string` | `"80"` | no |
 | protocol | n/a | `string` | `"HTTP"` | no |
-| threshold | n/a | `number` | `1` | no |
-| time\_request | n/a | `number` | `30` | no |
+| request\_interval | n/a | `number` | `30` | no |
+| threshold | n/a | `number` | `2` | no |
 
 ## Outputs
 
